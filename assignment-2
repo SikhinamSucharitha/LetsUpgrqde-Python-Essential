@@ -1,0 +1,28 @@
+# LetsUpgrade-Python-Essentials
+
+
+#PLAIN LANDING:-
+i=0
+while(i<=2):
+    altitude=int(input())
+    if(altitude<=1000):
+        print("Safe to Land")
+    elif(altitude>1000 and altitude<=5000):
+        print("Bring down to 1000")
+    elif(altitude>5000):
+        print("Turn Around")
+    else:
+        break
+    i=i+1
+
+
+#PRIME NUMBERS:-
+
+for num in range(1,200):
+    count=0
+    for i in range(2,(num//2+1)):
+        if(num%i==0):
+            count=count+1
+            break
+    if(count==0 and num!=1):
+        print(num,end=" ")
