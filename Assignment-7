@@ -1,0 +1,32 @@
+# LetsUpgrade-Python-Essentials
+fp=open("new.txt","w")
+fp.close()
+fp=open("new.txt","r")
+try:
+    fp.write("hello world")
+except IOError as err:
+    print('error regarding the operation on file is:"',err,'"')
+    
+    
+ error regarding the operation on file is:" not writable "
+ 
+ 
+/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ 
+ def gen(fib):
+    def inner():
+        n=int(input("enter range of fib"))
+        return fib(n)
+    return inner()
+@gen
+def fib(n):
+    prev=0
+    cur=1
+    print(prev,cur,end=" ")
+    for i in range(0,n-2):
+        cur=prev+cur
+        prev=cur-prev
+        print(cur,end=" ")
+        
+        
+enter range of fib8
+0 1 1 2 3 5 8 13
